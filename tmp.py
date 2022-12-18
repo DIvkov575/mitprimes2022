@@ -1,4 +1,13 @@
-with open("to_sign.txt", "r") as file:
-    a = file.readlines()[1:2]
-    b = a[0]
-    print(b)
+
+n = 604*10**14
+print(n)
+d = 2.63856689*10**33
+print(d)
+
+a = 1
+
+for i in range(n+1):
+    a*= (d-i)/d
+    print(n-i+1)
+
+print(a)
